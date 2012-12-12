@@ -10,14 +10,14 @@ not released or added yet!
 
 ## Quick API overview
 
-Call md5, sha1 and sha256 on any NSString:
+Call `md5`, `sha1` and `sha256` on any `NSString`:
 
 	NSString* string = @"NSHash";
 	NSLog(@"MD5:    %@", [string md5]);
 	NSLog(@"SHA1:   %@", [string sha1]);
 	NSLog(@"SHA256: %@", [string sha256]);
-	
-Outputs:
+
+Will output:
 
 	MD5:    ccbe85c2011c5fe3da7d760849c4f99e
 	SHA1:   f5b17712c5d31ab49654b0baadf699561958d750
