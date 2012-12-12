@@ -14,11 +14,14 @@
 //  limitations under the License
 //
 
-#import "NSHashTests.h"
+#import <Foundation/Foundation.h>
 
-@implementation NSHashTests
+@interface NSData (NSHash)
 
-- (void)testExample {
-}
+- (NSMutableString*) md5;
+
+- (NSMutableString*) sha1;
+
+- (NSMutableString*) sha256;
 
 @end

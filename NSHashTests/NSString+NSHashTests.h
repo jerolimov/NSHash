@@ -16,6 +16,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface NSHashTests : SenTestCase
+@interface NSString_NSHashTests : SenTestCase
 
 @end

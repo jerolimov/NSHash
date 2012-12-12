@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		59F662D11679386900451DF8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662D01679386900451DF8 /* Cocoa.framework */; };
-		59F662DB1679386900451DF8 /* NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F662DA1679386900451DF8 /* NSHash.m */; };
 		59F662E31679386900451DF8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662E21679386900451DF8 /* SenTestingKit.framework */; };
 		59F662E41679386900451DF8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662D01679386900451DF8 /* Cocoa.framework */; };
 		59F662E71679386900451DF8 /* NSHash.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662CD1679386900451DF8 /* NSHash.dylib */; };
-		59F662F01679386900451DF8 /* NSHashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F662EF1679386900451DF8 /* NSHashTests.m */; };
+		59F662FF16793AD400451DF8 /* NSString+NSHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F662FD16793AD400451DF8 /* NSString+NSHash.h */; };
+		59F6630016793AD400451DF8 /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F662FE16793AD400451DF8 /* NSString+NSHash.m */; };
+		59F6630316793AF700451DF8 /* NSData+NSHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F6630116793AF700451DF8 /* NSData+NSHash.h */; };
+		59F6630416793AF700451DF8 /* NSData+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F6630216793AF700451DF8 /* NSData+NSHash.m */; };
+		59F6630716793B1A00451DF8 /* NSString+NSHashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F6630616793B1A00451DF8 /* NSString+NSHashTests.m */; };
+		59F6630A16793B4B00451DF8 /* NSData+NSHashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F6630916793B4B00451DF8 /* NSData+NSHashTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,14 +35,18 @@
 		59F662D31679386900451DF8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		59F662D41679386900451DF8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		59F662D51679386900451DF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		59F662D91679386900451DF8 /* NSHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSHash.h; sourceTree = "<group>"; };
-		59F662DA1679386900451DF8 /* NSHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSHash.m; sourceTree = "<group>"; };
 		59F662E11679386900451DF8 /* NSHashTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSHashTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F662E21679386900451DF8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		59F662EE1679386900451DF8 /* NSHashTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSHashTests.h; sourceTree = "<group>"; };
-		59F662EF1679386900451DF8 /* NSHashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSHashTests.m; sourceTree = "<group>"; };
 		59F662F91679392500451DF8 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		59F662FA1679392F00451DF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		59F662FD16793AD400451DF8 /* NSString+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSHash.h"; sourceTree = "<group>"; };
+		59F662FE16793AD400451DF8 /* NSString+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSHash.m"; sourceTree = "<group>"; };
+		59F6630116793AF700451DF8 /* NSData+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NSHash.h"; sourceTree = "<group>"; };
+		59F6630216793AF700451DF8 /* NSData+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NSHash.m"; sourceTree = "<group>"; };
+		59F6630516793B1A00451DF8 /* NSString+NSHashTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSHashTests.h"; sourceTree = "<group>"; };
+		59F6630616793B1A00451DF8 /* NSString+NSHashTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSHashTests.m"; sourceTree = "<group>"; };
+		59F6630816793B4B00451DF8 /* NSData+NSHashTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NSHashTests.h"; sourceTree = "<group>"; };
+		59F6630916793B4B00451DF8 /* NSData+NSHashTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NSHashTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +115,10 @@
 		59F662D61679386900451DF8 /* NSHash */ = {
 			isa = PBXGroup;
 			children = (
-				59F662D91679386900451DF8 /* NSHash.h */,
-				59F662DA1679386900451DF8 /* NSHash.m */,
+				59F662FD16793AD400451DF8 /* NSString+NSHash.h */,
+				59F662FE16793AD400451DF8 /* NSString+NSHash.m */,
+				59F6630116793AF700451DF8 /* NSData+NSHash.h */,
+				59F6630216793AF700451DF8 /* NSData+NSHash.m */,
 			);
 			path = NSHash;
 			sourceTree = "<group>";
@@ -116,8 +126,10 @@
 		59F662E81679386900451DF8 /* NSHashTests */ = {
 			isa = PBXGroup;
 			children = (
-				59F662EE1679386900451DF8 /* NSHashTests.h */,
-				59F662EF1679386900451DF8 /* NSHashTests.m */,
+				59F6630516793B1A00451DF8 /* NSString+NSHashTests.h */,
+				59F6630616793B1A00451DF8 /* NSString+NSHashTests.m */,
+				59F6630816793B4B00451DF8 /* NSData+NSHashTests.h */,
+				59F6630916793B4B00451DF8 /* NSData+NSHashTests.m */,
 			);
 			path = NSHashTests;
 			sourceTree = "<group>";
@@ -129,6 +141,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F662FF16793AD400451DF8 /* NSString+NSHash.h in Headers */,
+				59F6630316793AF700451DF8 /* NSData+NSHash.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F662DB1679386900451DF8 /* NSHash.m in Sources */,
+				59F6630016793AD400451DF8 /* NSString+NSHash.m in Sources */,
+				59F6630416793AF700451DF8 /* NSData+NSHash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F662F01679386900451DF8 /* NSHashTests.m in Sources */,
+				59F6630716793B1A00451DF8 /* NSString+NSHashTests.m in Sources */,
+				59F6630A16793B4B00451DF8 /* NSData+NSHashTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +344,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				INFOPLIST_FILE = "NSHashTests/NSHashTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -339,7 +354,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				INFOPLIST_FILE = "NSHashTests/NSHashTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};

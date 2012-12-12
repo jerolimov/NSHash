@@ -14,8 +14,8 @@
 //  limitations under the License
 //
 
-#import <Foundation/Foundation.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface NSHash : NSObject
+@interface NSData_NSHashTests : SenTestCase
 
 @end

@@ -14,8 +14,14 @@
 //  limitations under the License
 //
 
-#import "NSHash.h"
+#import <Foundation/Foundation.h>
 
-@implementation NSHash
+@interface NSString (NSHash)
+
+- (NSMutableString*) md5;
+
+- (NSMutableString*) sha1;
+
+- (NSMutableString*) sha256;
 
 @end
