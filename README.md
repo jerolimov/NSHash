@@ -4,9 +4,7 @@ NSHash adds hashing methods to NSString and NSData.
 
 Copy the NSHash class into your project or add this line to your Podfile
 
-	pod 'NSHash', '~> 0.1.0'
-
-not released or added yet!
+	pod 'NSHash', '~> 1.0.0'
 
 ## Quick API overview
 
