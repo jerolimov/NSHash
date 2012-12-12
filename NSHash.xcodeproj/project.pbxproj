@@ -12,7 +12,6 @@
 		59F662E31679386900451DF8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662E21679386900451DF8 /* SenTestingKit.framework */; };
 		59F662E41679386900451DF8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662D01679386900451DF8 /* Cocoa.framework */; };
 		59F662E71679386900451DF8 /* NSHash.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662CD1679386900451DF8 /* NSHash.dylib */; };
-		59F662ED1679386900451DF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59F662EB1679386900451DF8 /* InfoPlist.strings */; };
 		59F662F01679386900451DF8 /* NSHashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F662EF1679386900451DF8 /* NSHashTests.m */; };
 /* End PBXBuildFile section */
 
@@ -32,15 +31,14 @@
 		59F662D31679386900451DF8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		59F662D41679386900451DF8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		59F662D51679386900451DF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		59F662D81679386900451DF8 /* NSHash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSHash-Prefix.pch"; sourceTree = "<group>"; };
 		59F662D91679386900451DF8 /* NSHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSHash.h; sourceTree = "<group>"; };
 		59F662DA1679386900451DF8 /* NSHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSHash.m; sourceTree = "<group>"; };
 		59F662E11679386900451DF8 /* NSHashTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSHashTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F662E21679386900451DF8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		59F662EA1679386900451DF8 /* NSHashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSHashTests-Info.plist"; sourceTree = "<group>"; };
-		59F662EC1679386900451DF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59F662EE1679386900451DF8 /* NSHashTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSHashTests.h; sourceTree = "<group>"; };
 		59F662EF1679386900451DF8 /* NSHashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSHashTests.m; sourceTree = "<group>"; };
+		59F662F91679392500451DF8 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		59F662FA1679392F00451DF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +66,8 @@
 		59F662C21679386900451DF8 = {
 			isa = PBXGroup;
 			children = (
+				59F662FA1679392F00451DF8 /* README.md */,
+				59F662F91679392500451DF8 /* LICENSE.txt */,
 				59F662D61679386900451DF8 /* NSHash */,
 				59F662E81679386900451DF8 /* NSHashTests */,
 				59F662CF1679386900451DF8 /* Frameworks */,
@@ -109,17 +109,8 @@
 			children = (
 				59F662D91679386900451DF8 /* NSHash.h */,
 				59F662DA1679386900451DF8 /* NSHash.m */,
-				59F662D71679386900451DF8 /* Supporting Files */,
 			);
 			path = NSHash;
-			sourceTree = "<group>";
-		};
-		59F662D71679386900451DF8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				59F662D81679386900451DF8 /* NSHash-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		59F662E81679386900451DF8 /* NSHashTests */ = {
@@ -127,18 +118,8 @@
 			children = (
 				59F662EE1679386900451DF8 /* NSHashTests.h */,
 				59F662EF1679386900451DF8 /* NSHashTests.m */,
-				59F662E91679386900451DF8 /* Supporting Files */,
 			);
 			path = NSHashTests;
-			sourceTree = "<group>";
-		};
-		59F662E91679386900451DF8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				59F662EA1679386900451DF8 /* NSHashTests-Info.plist */,
-				59F662EB1679386900451DF8 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +203,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F662ED1679386900451DF8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,17 +250,6 @@
 			targetProxy = 59F662E51679386900451DF8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		59F662EB1679386900451DF8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				59F662EC1679386900451DF8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		59F662F11679386900451DF8 /* Debug */ = {
@@ -341,8 +310,6 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSHash/NSHash-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,8 +319,6 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSHash/NSHash-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -363,8 +328,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSHash/NSHash-Prefix.pch";
 				INFOPLIST_FILE = "NSHashTests/NSHashTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -376,8 +339,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSHash/NSHash-Prefix.pch";
 				INFOPLIST_FILE = "NSHashTests/NSHashTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
