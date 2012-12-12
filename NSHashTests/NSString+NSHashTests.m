@@ -19,20 +19,20 @@
 
 @implementation NSString_NSHashTests
 
-- (void) testMd5 {
-	NSString* actualHash = [@"NSHash" md5];
+- (void) testMD5 {
+	NSString* actualHash = [@"NSHash" MD5];
 	NSString* expectedHash = @"ccbe85c2011c5fe3da7d760849c4f99e";
 	STAssertEqualObjects(actualHash, expectedHash, @"Hashing does not work like expected.");
 }
 
-- (void) testSha1 {
-	NSString* actualHash = [@"NSHash" sha1];
+- (void) testSHA1 {
+	NSString* actualHash = [@"NSHash" SHA1];
 	NSString* expectedHash = @"f5b17712c5d31ab49654b0baadf699561958d750";
 	STAssertEqualObjects(actualHash, expectedHash, @"Hashing does not work like expected.");
 }
 
-- (void) testSha256 {
-	NSString* actualHash = [@"NSHash" sha256];
+- (void) testSHA256 {
+	NSString* actualHash = [@"NSHash" SHA256];
 	NSString* expectedHash = @"84423607efac17079369134460239541285d5ff40594f9b8b16f567500162d2e";
 	STAssertEqualObjects(actualHash, expectedHash, @"Hashing does not work like expected.");
 }

@@ -20,7 +20,7 @@
 
 @implementation NSString (NSHash)
 
-- (NSMutableString*) md5 {
+- (NSMutableString*) MD5 {
 	unsigned int inputLength = (unsigned int) [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
 	unsigned int outputLength = CC_MD5_DIGEST_LENGTH;
 	unsigned char output[outputLength];
@@ -29,7 +29,7 @@
 	return [self toHexString:output length:outputLength];;
 }
 
-- (NSMutableString*) sha1 {
+- (NSMutableString*) SHA1 {
 	unsigned int inputLength = (unsigned int) [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
 	unsigned int outputLength = CC_SHA1_DIGEST_LENGTH;
 	unsigned char output[outputLength];
@@ -38,7 +38,7 @@
 	return [self toHexString:output length:outputLength];;
 }
 
-- (NSMutableString*) sha256 {
+- (NSMutableString*) SHA256 {
 	unsigned int inputLength = (unsigned int) [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
 	unsigned int outputLength = CC_SHA256_DIGEST_LENGTH;
 	unsigned char output[outputLength];

@@ -18,10 +18,10 @@
 
 @interface NSData (NSHash)
 
-- (NSMutableData*) md5;
+- (NSMutableData*) MD5;
 
-- (NSMutableData*) sha1;
+- (NSMutableData*) SHA1;
 
-- (NSMutableData*) sha256;
+- (NSMutableData*) SHA256;
 
 @end

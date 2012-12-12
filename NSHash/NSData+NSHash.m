@@ -20,7 +20,7 @@
 
 @implementation NSData (NSHash)
 
-- (NSMutableData*) md5 {
+- (NSMutableData*) MD5 {
 	unsigned int outputLength = CC_MD5_DIGEST_LENGTH;
 	unsigned char output[outputLength];
 	
@@ -28,7 +28,7 @@
 	return [NSMutableData dataWithBytes:output length:outputLength];
 }
 
-- (NSMutableData*) sha1 {
+- (NSMutableData*) SHA1 {
 	unsigned int outputLength = CC_SHA1_DIGEST_LENGTH;
 	unsigned char output[outputLength];
 	
@@ -36,7 +36,7 @@
 	return [NSMutableData dataWithBytes:output length:outputLength];
 }
 
-- (NSMutableData*) sha256 {
+- (NSMutableData*) SHA256 {
 	unsigned int outputLength = CC_SHA256_DIGEST_LENGTH;
 	unsigned char output[outputLength];
 	
