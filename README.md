@@ -10,14 +10,19 @@ not released or added yet!
 
 ## Quick API overview
 
-Call `MD5`, `SHA1` and `SHA256` on any `NSString`:
+Import the the category class you need:
+
+	#import <NSHash/NSData+NSString.h>
+	#import <NSHash/NSData+NSHash.h>
+
+After that you can call `MD5`, `SHA1` and `SHA256` on any `NSString`:
 
 	NSString* string = @"NSHash";
 	NSLog(@"MD5:    %@", [string MD5]);
 	NSLog(@"SHA1:   %@", [string SHA1]);
 	NSLog(@"SHA256: %@", [string SHA256]);
 
-Will output:
+This will return a new `NSString` with a hex code transformed version of the hash:
 
 	MD5:    ccbe85c2011c5fe3da7d760849c4f99e
 	SHA1:   f5b17712c5d31ab49654b0baadf699561958d750
@@ -30,7 +35,7 @@ Or call `MD5`, `SHA1` and `SHA256` on any `NSData`:
 	NSLog(@"SHA1:   %@", [data SHA1]);
 	NSLog(@"SHA256: %@", [data SHA256]);
 
-Will output:
+Which will return the `NSData` with the hash as bytes without the hex transformation:
 
 	MD5:    <ccbe85c2 011c5fe3 da7d7608 49c4f99e>
 	SHA1:   <f5b17712 c5d31ab4 9654b0ba adf69956 1958d750>
