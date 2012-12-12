@@ -23,4 +23,15 @@ Will output:
 	SHA1:   f5b17712c5d31ab49654b0baadf699561958d750
 	SHA256: 84423607efac17079369134460239541285d5ff40594f9b8b16f567500162d2e
 
-TODO NSData example (API not final here!)
+Or call `MD5`, `SHA1` and `SHA256` on any `NSData`:
+
+	NSData* data = [@"NSHash" dataUsingEncoding:NSUTF8StringEncoding];
+	NSLog(@"MD5:    %@", [data MD5]);
+	NSLog(@"SHA1:   %@", [data SHA1]);
+	NSLog(@"SHA256: %@", [data SHA256]);
+
+Will output:
+
+	MD5:    <ccbe85c2 011c5fe3 da7d7608 49c4f99e>
+	SHA1:   <f5b17712 c5d31ab4 9654b0ba adf69956 1958d750>
+	SHA256: <84423607 efac1707 93691344 60239541 285d5ff4 0594f9b8 b16f5675 00162d2e>
