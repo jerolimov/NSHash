@@ -38,3 +38,7 @@ Which will return the `NSData` with the hash as bytes without the hex transforma
 	MD5:    <ccbe85c2 011c5fe3 da7d7608 49c4f99e>
 	SHA1:   <f5b17712 c5d31ab4 9654b0ba adf69956 1958d750>
 	SHA256: <84423607 efac1707 93691344 60239541 285d5ff4 0594f9b8 b16f5675 00162d2e>
+
+## Feedback are welcome
+
+Please fill an issue for any feedback or if you missed any other convenience method.
