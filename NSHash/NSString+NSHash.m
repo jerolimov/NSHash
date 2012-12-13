@@ -21,30 +21,31 @@
 @implementation NSString (NSHash)
 
 - (NSMutableString*) MD5 {
-	unsigned int inputLength = (unsigned int) [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
 	unsigned int outputLength = CC_MD5_DIGEST_LENGTH;
 	unsigned char output[outputLength];
 	
-	CC_MD5(self.UTF8String, inputLength, output);
+	CC_MD5(self.UTF8String, [self UTF8Length], output);
 	return [self toHexString:output length:outputLength];;
 }
 
 - (NSMutableString*) SHA1 {
-	unsigned int inputLength = (unsigned int) [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
 	unsigned int outputLength = CC_SHA1_DIGEST_LENGTH;
 	unsigned char output[outputLength];
 	
-	CC_SHA1(self.UTF8String, inputLength, output);
+	CC_SHA1(self.UTF8String, [self UTF8Length], output);
 	return [self toHexString:output length:outputLength];;
 }
 
 - (NSMutableString*) SHA256 {
-	unsigned int inputLength = (unsigned int) [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
 	unsigned int outputLength = CC_SHA256_DIGEST_LENGTH;
 	unsigned char output[outputLength];
 	
-	CC_SHA256(self.UTF8String, inputLength, output);
+	CC_SHA256(self.UTF8String, [self UTF8Length], output);
 	return [self toHexString:output length:outputLength];;
+}
+
+- (unsigned int) UTF8Length {
+	return (unsigned int) [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (NSMutableString*) toHexString:(unsigned char*) data length: (unsigned int) length {
