@@ -18,7 +18,7 @@
 
 #import <CommonCrypto/CommonDigest.h>
 
-@implementation NSString (NSHash)
+@implementation NSString (NSHash_AdditionalHashingAlgorithms)
 
 - (NSString*) MD5 {
 	unsigned int outputLength = CC_MD5_DIGEST_LENGTH;

@@ -16,7 +16,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (NSHash)
+@interface NSData (NSHash_AdditionalHashingAlgorithms)
 
 - (NSData*) MD5;
 
