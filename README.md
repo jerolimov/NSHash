@@ -10,7 +10,7 @@ Copy the NSHash class into your project or add this line to your [Podfile](http:
 
 Import the the category class you need:
 
-	#import <NSHash/NSData+NSString.h>
+	#import <NSHash/NSString+NSHash.h>
 	#import <NSHash/NSData+NSHash.h>
 
 After that you can call `MD5`, `SHA1` and `SHA256` on any `NSString`:
