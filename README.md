@@ -3,7 +3,7 @@
 > NSHash adds hashing methods to NSString and NSData.
 
 [![Build Status](https://travis-ci.org/jerolimov/NSHash.svg)](https://travis-ci.org/jerolimov/NSHash)
-[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/NSHash.svg)](https://img.shields.io/cocoapods/v/NSHash.svg)
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/NSHash.svg)](https://cocoapods.org/pods/NSHash)
 [![Supported Platforms](https://img.shields.io/cocoapods/p/NSHash.svg?style=flat)](http://cocoadocs.org/docsets/NSHash)
 
 ## How to use it
