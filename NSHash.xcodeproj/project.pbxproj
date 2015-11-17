@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		59F662D11679386900451DF8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662D01679386900451DF8 /* Cocoa.framework */; };
-		59F662E31679386900451DF8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662E21679386900451DF8 /* SenTestingKit.framework */; };
 		59F662E41679386900451DF8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662D01679386900451DF8 /* Cocoa.framework */; };
 		59F662E71679386900451DF8 /* NSHash.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F662CD1679386900451DF8 /* NSHash.dylib */; };
 		59F662FF16793AD400451DF8 /* NSString+NSHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F662FD16793AD400451DF8 /* NSString+NSHash.h */; };
@@ -35,8 +34,7 @@
 		59F662D31679386900451DF8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		59F662D41679386900451DF8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		59F662D51679386900451DF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		59F662E11679386900451DF8 /* NSHashTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSHashTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		59F662E21679386900451DF8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		59F662E11679386900451DF8 /* NSHashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSHashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F662F91679392500451DF8 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		59F662FA1679392F00451DF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		59F662FD16793AD400451DF8 /* NSString+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSHash.h"; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F662E31679386900451DF8 /* SenTestingKit.framework in Frameworks */,
 				59F662E41679386900451DF8 /* Cocoa.framework in Frameworks */,
 				59F662E71679386900451DF8 /* NSHash.dylib in Frameworks */,
 			);
@@ -87,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				59F662CD1679386900451DF8 /* NSHash.dylib */,
-				59F662E11679386900451DF8 /* NSHashTests.octest */,
+				59F662E11679386900451DF8 /* NSHashTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				59F662D01679386900451DF8 /* Cocoa.framework */,
-				59F662E21679386900451DF8 /* SenTestingKit.framework */,
 				59F662D21679386900451DF8 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -182,8 +178,8 @@
 			);
 			name = NSHashTests;
 			productName = NSHashTests;
-			productReference = 59F662E11679386900451DF8 /* NSHashTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
+			productReference = 59F662E11679386900451DF8 /* NSHashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -191,6 +187,7 @@
 		59F662C41679386900451DF8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = buenocode;
 			};
@@ -344,9 +341,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -354,9 +353,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
