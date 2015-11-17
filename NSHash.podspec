@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'NSHash'
   spec.summary          = 'NSHash adds hashing methods to NSString and NSData.'
-  spec.version          = '1.0.1'
+  spec.version          = '1.0.2'
   spec.license          = { :type => 'Apache License, Version 2.0', :file => 'LICENSE.txt' }
   spec.homepage         = 'https://github.com/jerolimov/NSHash'
   spec.author           = "Christoph Jerolimov"
