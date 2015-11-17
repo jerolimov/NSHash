@@ -1,4 +1,6 @@
-NSHash adds hashing methods to NSString and NSData.
+# Objective C NSHash
+
+> NSHash adds hashing methods to NSString and NSData.
 
 ## Use it
 
