@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.license          = { :type => 'Apache License, Version 2.0', :file => 'LICENSE.txt' }
   spec.homepage         = 'https://github.com/jerolimov/NSHash'
   spec.author           = "Christoph Jerolimov"
-  spec.social_media_url = "http://twitter.com/Christoph Jerolimov"
+  spec.social_media_url = "http://twitter.com/jerolimov"
 
   spec.source       = { :git => 'https://github.com/jerolimov/NSHash.git', :tag => "#{spec.version}" }
   spec.ios.deployment_target = "5.0"
