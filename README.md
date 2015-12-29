@@ -1,4 +1,4 @@
-# Objective C NSHash
+# Objective-C NSHash
 
 > NSHash adds hashing methods to NSString and NSData.
 
@@ -72,3 +72,6 @@ MD5 as NSString:    ccbe85c2011c5fe3da7d760849c4f99e
 SHA1 as NSString:   f5b17712c5d31ab49654b0baadf699561958d750
 SHA256 as NSString: 84423607efac17079369134460239541285d5ff40594f9b8b16f567500162d2e
 ```
+
+The generated doc (still only two categories with only this few methods)
+is also available on [cocoadocs](http://cocoadocs.org/docsets/NSHash/).
