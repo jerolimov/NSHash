@@ -54,7 +54,7 @@
 		[hash appendFormat:@"%02x", data[i]];
 		data[i] = 0;
 	}
-	return hash;
+	return [hash copy];
 }
 
 @end
