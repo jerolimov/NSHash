@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "59F662E01679386900451DF8"
-               BuildableName = "NSHashTests.octest"
+               BuildableName = "NSHashTests.xctest"
                BlueprintName = "NSHashTests"
                ReferencedContainer = "container:NSHash.xcodeproj">
             </BuildableReference>
