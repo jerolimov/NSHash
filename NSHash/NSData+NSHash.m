@@ -25,7 +25,7 @@
 	unsigned char output[outputLength];
 	
 	CC_MD5(self.bytes, (unsigned int) self.length, output);
-	return [[NSMutableData dataWithBytes:output length:outputLength] copy];
+	return [NSData dataWithBytes:output length:outputLength];
 }
 
 - (nonnull NSData*) SHA1 {
@@ -33,7 +33,7 @@
 	unsigned char output[outputLength];
 	
 	CC_SHA1(self.bytes, (unsigned int) self.length, output);
-	return [[NSMutableData dataWithBytes:output length:outputLength] copy];
+	return [NSData dataWithBytes:output length:outputLength];
 }
 
 - (nonnull NSData*) SHA256 {
@@ -41,7 +41,7 @@
 	unsigned char output[outputLength];
 	
 	CC_SHA256(self.bytes, (unsigned int) self.length, output);
-	return [[NSMutableData dataWithBytes:output length:outputLength] copy];
+	return [NSData dataWithBytes:output length:outputLength];
 }
 
 @end

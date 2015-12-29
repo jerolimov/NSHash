@@ -25,7 +25,7 @@
 	unsigned char output[outputLength];
 	
 	CC_MD5(self.UTF8String, [self UTF8Length], output);
-	return [self toHexString:output length:outputLength];;
+	return [self toHexString:output length:outputLength];
 }
 
 - (nonnull NSString*) SHA1 {
@@ -33,7 +33,7 @@
 	unsigned char output[outputLength];
 	
 	CC_SHA1(self.UTF8String, [self UTF8Length], output);
-	return [self toHexString:output length:outputLength];;
+	return [self toHexString:output length:outputLength];
 }
 
 - (nonnull NSString*) SHA256 {
@@ -41,7 +41,7 @@
 	unsigned char output[outputLength];
 	
 	CC_SHA256(self.UTF8String, [self UTF8Length], output);
-	return [self toHexString:output length:outputLength];;
+	return [self toHexString:output length:outputLength];
 }
 
 - (unsigned int) UTF8Length {
