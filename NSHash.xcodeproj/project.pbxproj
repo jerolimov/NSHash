@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5974D4E71C33491800EC9555 /* NSHash.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NSHash.podspec; sourceTree = "<group>"; };
 		59F662CD1679386900451DF8 /* NSHash.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = NSHash.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F662D01679386900451DF8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		59F662D31679386900451DF8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -71,6 +72,7 @@
 		59F662C21679386900451DF8 = {
 			isa = PBXGroup;
 			children = (
+				5974D4E71C33491800EC9555 /* NSHash.podspec */,
 				59F662FA1679392F00451DF8 /* README.md */,
 				59F662F91679392500451DF8 /* LICENSE.txt */,
 				59F662D61679386900451DF8 /* NSHash */,
