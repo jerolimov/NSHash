@@ -21,16 +21,16 @@
 /**
  Creates a MD5 string of the NSData object as string representation.
  */
-- (NSString*) MD5;
+- (nonnull NSString*) MD5;
 
 /**
  Creates a SHA1 string of the NSData object as string representation.
  */
-- (NSString*) SHA1;
+- (nonnull NSString*) SHA1;
 
 /**
  Creates a SHA256 string of the NSData object as string representation.
  */
-- (NSString*) SHA256;
+- (nonnull NSString*) SHA256;
 
 @end

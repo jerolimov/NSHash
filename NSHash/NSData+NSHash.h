@@ -21,16 +21,16 @@
 /**
  Creates a MD5 hash of the NSData object as NSData.
  */
-- (NSData*) MD5;
+- (nonnull NSData*) MD5;
 
 /**
  Creates a SHA1 hash of the NSData object as NSData.
  */
-- (NSData*) SHA1;
+- (nonnull NSData*) SHA1;
 
 /**
  Creates a SHA256 hash of the NSData object as NSData.
  */
-- (NSData*) SHA256;
+- (nonnull NSData*) SHA256;
 
 @end
