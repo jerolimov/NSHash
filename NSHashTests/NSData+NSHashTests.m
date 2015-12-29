@@ -25,16 +25,34 @@
 	XCTAssertEqualObjects(actualHash, expectedHash, @"Hashing does not work like expected.");
 }
 
+- (void) testMD5String {
+    NSString* actualHash = [[NSData dataWithBytes:"NSHash" length:6] MD5String];
+    NSString* expectedHash = @"ccbe85c2011c5fe3da7d760849c4f99e";
+    XCTAssertEqualObjects(actualHash, expectedHash, @"Hashing does not work like expected.");
+}
+
 - (void) testSHA1 {
 	NSData* actualHash = [[NSData dataWithBytes:"NSHash" length:6] SHA1];
 	NSData* expectedHash = [self parseHexString:@"f5b17712c5d31ab49654b0baadf699561958d750"];
 	XCTAssertEqualObjects(actualHash, expectedHash, @"Hashing does not work like expected.");
 }
 
+- (void) testSHA1String {
+    NSString* actualHash = [[NSData dataWithBytes:"NSHash" length:6] SHA1String];
+    NSString* expectedHash = @"f5b17712c5d31ab49654b0baadf699561958d750";
+    XCTAssertEqualObjects(actualHash, expectedHash, @"Hashing does not work like expected.");
+}
+
 - (void) testSHA256 {
 	NSData* actualHash = [[NSData dataWithBytes:"NSHash" length:6] SHA256];
 	NSData* expectedHash = [self parseHexString:@"84423607efac17079369134460239541285d5ff40594f9b8b16f567500162d2e"];
 	XCTAssertEqualObjects(actualHash, expectedHash, @"Hashing does not work like expected.");
+}
+
+- (void) testSHA256String {
+    NSString* actualHash = [[NSData dataWithBytes:"NSHash" length:6] SHA256String];
+    NSString* expectedHash = @"84423607efac17079369134460239541285d5ff40594f9b8b16f567500162d2e";
+    XCTAssertEqualObjects(actualHash, expectedHash, @"Hashing does not work like expected.");
 }
 
 - (NSData*) parseHexString:(NSString*) string {
@@ -46,7 +64,7 @@
 		const char byte = strtol(buffer, NULL, 16);
 		[data appendBytes:&byte length:1];
 	}
-	return data;
+	return [data copy];
 }
 
 @end

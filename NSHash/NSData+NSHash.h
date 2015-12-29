@@ -19,18 +19,33 @@
 @interface NSData (NSHash_AdditionalHashingAlgorithms)
 
 /**
- Creates a MD5 hash of the NSData object as NSData.
+ Creates a MD5 hash of the current NSData object as NSData representation.
  */
 - (nonnull NSData*) MD5;
 
 /**
- Creates a SHA1 hash of the NSData object as NSData.
+ Creates a MD5 hash of the current NSData object as hex NSString representation.
+ */
+- (nonnull NSString*) MD5String;
+
+/**
+ Creates a SHA1 hash of the current NSData object as NSData representation.
  */
 - (nonnull NSData*) SHA1;
 
 /**
- Creates a SHA256 hash of the NSData object as NSData.
+ Creates a SHA1 hash of the current NSData object as hex NSString representation.
+ */
+- (nonnull NSString*) SHA1String;
+
+/**
+ Creates a SHA256 hash of the current NSData object as NSData representation.
  */
 - (nonnull NSData*) SHA256;
+
+/**
+ Creates a SHA256 hash of the current NSData object as hex NSString representation.
+ */
+- (nonnull NSString*) SHA256String;
 
 @end
