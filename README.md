@@ -31,10 +31,12 @@ NSString* string = @"NSHash";
 NSLog(@"MD5 as NSString:    %@", [string MD5]);
 NSLog(@"SHA1 as NSString:   %@", [string SHA1]);
 NSLog(@"SHA256 as NSString: %@", [string SHA256]);
+NSLog(@"SHA512 as NSString: %@", [string SHA512]);
 
 NSLog(@"MD5 as NSData:      %@", [string MD5Data]);
 NSLog(@"SHA1 as NSData:     %@", [string SHA1Data]);
 NSLog(@"SHA256 as NSData:   %@", [string SHA256Data]);
+NSLog(@"SHA512 as NSData:   %@", [string SHA512Data]);
 ```
 
 This will return a new `NSString` with a hex code transformed version of the hash:
