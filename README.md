@@ -11,7 +11,7 @@
 Copy the NSHash classes into your project or add this line to your [Podfile](http://cocoapods.org/):
 
 ```ruby
-pod 'NSHash', '~> 1.1.0'
+pod 'NSHash', '~> 1.2.0'
 ```
 
 ## Quick API overview
